@@ -7,10 +7,10 @@ import numpy as np
 path = os.getcwd()
 
 #concatenate json files
-df1 = pd.read_json(os.path.join('2020_data.json'))
-df2 = pd.read_json(os.path.join('2019_data.json'))
-df3 = pd.read_json(os.path.join('2018_data.json'))
-df4 = pd.read_json(os.path.join('2017_data.json'))
+df1 = pd.read_json(os.path.join('data', '2020_data.json'))
+df2 = pd.read_json(os.path.join('data', '2019_data.json'))
+df3 = pd.read_json(os.path.join('data', '2018_data.json'))
+df4 = pd.read_json(os.path.join('data', '2017_data.json'))
 
 frames = [df1, df2, df3, df4]
 result1 = pd.concat(frames)
